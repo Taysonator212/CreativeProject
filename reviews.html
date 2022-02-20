@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dante's Photography</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li style="float:right"><a class="active" href="reviews.html">Reviews</a></li>
+    <li><a href="appointments.html">Appointments</a></li>
+  </ul>
+
+<div class="heading">
+  <h1>Reviews</h1>
+  <h2>feel free to leave a review below!</h2>
+</div>
+
+  <div class="review-list">
+    <p class="reviewL">I have never looked so good. He knows some great spots and has the perfect equipment to get the best lighting<br>Brittin S. 5&#11088;'s'</p>
+    <p class="reviewR">His photography helps me see life through a refreshing lens<br>Jesse M. 5&#11088;'s'</p>
+    <p class="reviewL">Dante is a wonderful man and truly a professional in his field. He was instantly able to put my family at ease, and capture some captivating photographs. I will treasure them forever. I simply cannot recommend him enough!<br>Chelsea H. 5&#11088;'s'</p>
+    <p class="reviewR">Dante was the best photographer I have ever hired. On time. Followed through on everything he said he would do. Would highly recommend him to family, friends and business associates<br>Jen B. 4&#11088;'s'</p>
+    <p class="reviewL">Great photographer to work with. Dante was energetic, engaging, and a lot of fun! We love our wedding pictures!<br>Stephanie M. 4&#11088;'s'</p>
+    <p class="reviewR">Dante is super creative and is genuinely a nice guy. Great to work with!<br>Alexa J. 4&#11088;'s'</p>
+    <p class="reviewL">Dante is an extremely personable individual, with an artistic eye, he will make your experience memorable!!<br>Kelsie T. 5&#11088;'s'</p>
+    <p class="userReview" id="userReview"></p>
+  </div>
+
+<div class="userSubmission" style="display:flex; flex-direction:column; align-items:center">
+  <h2> Leave a Review Below! </h2>
+  <form class="review">
+    Name:<input id="name" type="text" name="name" value="Steve R." style="margin-left:5px; margin-bottom:10px">
+    <br>
+<br>
+    <textarea id="description" rows="10" cols="50" name="description" spellcheck="true">Type your Review here
+    </textarea>
+  </form>
+  <br>
+  <p>
+    <input type="button" class="submission" onclick="getReview()" value="Submit" style="background-color:Blue; color:white; height:50px; width:100px"></input>
+    <br>
+  </p>
+</div>
+
+
+
+
+
+
+
+
+<footer style="background-color: black; display:flex; justify-content: space-between;">
+  <p>
+    <a href="https://github.com/BYUCS260/weather-app-Taysonator212" style="color:DarkGrey; float:left">GitHub Repository</a>
+  </p>
+  <p style="float:center; color:DarkGrey">
+    Feel free to contact me through these means<br>
+    <a href="taysonshepherd@gmail.com" style="color:DarkGrey">taysonshepherd@gmail.com</a><br>
+    Phone Number: 509-881-9561 <br>
+    PO box: 123456789
+  </p>
+
+  <p style="float:right; color:DarkGrey">
+    A quick message from the page admin <br>
+    hey, if you somehow hacked in, please dont grief <br>
+    This is just a page for a class project sooo <br>
+    Don't be a Jackwagon
+  </p>
+
+</footer>
+<script src='script-reviews.js'></script>
+
+</body>

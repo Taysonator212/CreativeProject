@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dante's Photography</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style-appointments.css">
+
+</head>
+<body>
+
+
+
+
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="reviews.html">Reviews</a></li>
+    <li style="float:right"><a class="active" href="appointments.html">Appointments</a></li>
+  </ul>
+
+
+<h1>Appointments</h1>
+<h2>Fill out this information and I'll reach out to you to set up an appointment</h2>
+
+<div style="display:flex; justify-content:space-around">
+
+<div style="display:block; width:500px">
+<p>How many people do you want in this session?</p>
+<div style="display:flex; justify-content:space-around">
+<input type="button" class="amountOfPeople" data="unselected" onclick="SelectOption(this)" value="Personal" id="personalSession"></input>
+<input type="button" class="amountOfPeople" data="unselected" onclick="SelectOption(this)" value="Couple" id="coupleSession"></input>
+<input type="button" class="amountOfPeople" data="unselected" onclick="SelectOption(this)" value="Group" id="groupSession"></input>
+</div>
+
+<p>What time of day works best for you?</p>
+<div style="display:flex; justify-content:space-around">
+  <input type="button" class="timeOfDay" data="unselected" onclick="SelectOption(this)" value="Morning" id="morningSession"></input>
+  <input type="button" class="timeOfDay" data="unselected" onclick="SelectOption(this)" value="Afternoon" id="afternoonSession"></input>
+  <input type="button" class="timeOfDay" data="unselected" onclick="SelectOption(this)" value="Evening" id="eveningSession"></input>
+</div>
+<p>What type of session would you like?</p>
+<div style="display:flex; justify-content:space-around">
+  <input type="button" class="sessionType" data="unselected" onclick="SelectOption(this)" value="SeniorPictures" id="senior"></input>
+  <input type="button" class="sessionType" data="unselected" onclick="SelectOption(this)" value="Engagement" id="engagement"></input>
+  <input type="button" class="sessionType" data="unselected" onclick="SelectOption(this)" value="Portrait" id="portrait"></input>
+</div>
+<br>
+Please insert your email: <br><input id="email" type="text" name="email" value="youremail@example.com" style="margin-left:5px; margin-bottom:10px">
+<br>
+Please insert your phone number: <br><input id="phone" type="text" name="phone" value="(123)-456-7890" style="margin-left:5px; margin-bottom:10px">
+<br>
+<label for="contactMethod">Choose a preffered contact method</label>
+<select id="contactMethod">
+    <option value="">--Please choose an option--</option>
+    <option value="Phone">Phone</option>
+    <option value="Email">Email</option>
+    <option value="Both">Both/No Preference</option>
+</select>
+<br>
+
+<input type="button" class="submission" onclick="logApt()" value="Submit" style="background-color:Blue; color:white; height:50px; width:100px"></input>
+
+
+</div>
+
+
+
+<div style="width:600px; margin-right:20%">
+  <div class="calendar">
+  <div class="calendar__picture">
+    <h2>18, Sunday</h2>
+    <h3>November</h3>
+  </div>
+  <div class="calendar__date">
+    <div class="calendar__day">M</div>
+    <div class="calendar__day">T</div>
+    <div class="calendar__day">W</div>
+    <div class="calendar__day">T</div>
+    <div class="calendar__day">F</div>
+    <div class="calendar__day">S</div>
+    <div class="calendar__day">S</div>
+    <div class="calendar__number"></div>
+    <div class="calendar__number"></div>
+    <div class="calendar__number"></div>
+    <div class="calendar__number">1</div>
+    <div class="calendar__number">2</div>
+    <div class="calendar__number">3</div>
+    <div class="calendar__number">4</div>
+    <div class="calendar__number">5</div>
+    <div class="calendar__number">6</div>
+    <div class="calendar__number">7</div>
+    <div class="calendar__number">8</div>
+    <div class="calendar__number">9</div>
+    <div class="calendar__number">10</div>
+    <div class="calendar__number">11</div>
+    <div class="calendar__number">12</div>
+    <div class="calendar__number">13</div>
+    <div class="calendar__number">14</div>
+    <div class="calendar__number">15</div>
+    <div class="calendar__number">16</div>
+    <div class="calendar__number">17</div>
+    <div class="calendar__number calendar__number--current">18</div>
+    <div class="calendar__number">19</div>
+    <div class="calendar__number">20</div>
+    <div class="calendar__number">21</div>
+    <div class="calendar__number">22</div>
+    <div class="calendar__number">23</div>
+    <div class="calendar__number">24</div>
+    <div class="calendar__number">25</div>
+    <div class="calendar__number">26</div>
+    <div class="calendar__number">27</div>
+    <div class="calendar__number">28</div>
+    <div class="calendar__number">29</div>
+    <div class="calendar__number">30</div>
+  </div>
+</div>
+</div>
+
+</div>
+
+
+
+<div class="container">
+  <div class="centered" style="font-size:20px; color:black;">check weather</div>
+</div>
+<form class = "formation">
+      <label class = "intro">Enter desired photoshoot location (city):</label>
+      <input id="weatherInput" type="text"></input>
+      <input id="weatherSubmit" type="submit" value="Submit"></input>
+    </form>
+    <div id="weatherResults" style="margin-left:40%">
+    </div>
+
+    <div id="forecastResults">
+     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <footer style="background-color: black; display:flex; justify-content: space-between;">
+    <p>
+      <a href="https://github.com/BYUCS260/weather-app-Taysonator212" style="color:DarkGrey; float:left">GitHub Repository</a>
+    </p>
+    <p style="float:center; color:DarkGrey">
+      Feel free to contact me through these means<br>
+      <a href="taysonshepherd@gmail.com" style="color:DarkGrey">taysonshepherd@gmail.com</a><br>
+      Phone Number: 509-881-9561 <br>
+      PO box: 123456789
+    </p>
+
+    <p style="float:right; color:DarkGrey">
+      A quick message from the page admin <br>
+      hey, if you somehow hacked in, please dont grief <br>
+      This is just a page for a class project sooo <br>
+      Don't be a Jackwagon
+    </p>
+
+  </footer>
+
+
+  </body>
+<script src='script-appointments.js'></script>
+
+</html>
